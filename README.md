@@ -103,17 +103,17 @@ Dapatkan faucet ke dompet EVM Anda dari channel Andes. Dompet yang Anda gunakan 
 
 Gunakan MobaXterm atau Termius, Lalu masuk ke folder direktori `/dill/validator_keys` dan dapatkan file `deposit_data-xxxx.json` dan mengunggahnya ke situs di bawah ini.
 
-### 3.2 Visit https://staking.dill.xyz/
+### 3.2 Kunjungi https://staking.dill.xyz/
 
-Upload deposit_data-*.json
+Upload file deposit_data-*.json
 
 ![dillxyz1](https://github.com/user-attachments/assets/01ecd1a4-0fa3-4b4c-ad4f-1e638f9b643c)
 
-Connect to MetaMask，make sure you have enough balance（>2500 DILL）
+Connect ke MetaMask，pastikan Anda memiliki saldo DILL（>2500 DILL）
 
 ![dillxyz2](https://github.com/user-attachments/assets/9c393a9a-a9a8-43fb-b867-afdfb03aaffa)
 
-Send deposit，using MetaMask to send a deposit transaction
+Send deposit，gunakan MetaMask untuk mengirim transaksi deposit
 
 ![dillxyz3](https://github.com/user-attachments/assets/7f4008e0-35d3-4484-b219-e149d3d4059b)
 
@@ -122,25 +122,25 @@ Send deposit，using MetaMask to send a deposit transaction
 cd $HOME/dill
 ```
 
-### 4.1 Check health node
+### 4.1 Cek kesehatan node
 ```
 ./health_check.sh -v
 ```
-### 4.2 Stop node
+### 4.2 Menstop node
 
 ```
 ps -ef | grep dill-node | grep -v grep | awk '{print $2}' | xargs kill
 ```
-### 4.3 Start node
+### 4.3 Menjalankan node
 
 ```
 ./start_light.sh -p walletPw.txt
 ```
-### 4.4 Check logs
+### 4.4 Cek logs
 
 ```
 tail -f -n 100 $HOME/dill/light_node/logs/dill.log
 ```
-### 4.5 Check on Explorer
+### 4.5 Cek di Explorer
 
-Copy your pubkey in file deposit_data-xxxx.json and search it on explorer: https://andes.dill.xyz/validators
+Copy pubkey Anda di deposit_data-xxxx.json dan cari di explorer: https://andes.dill.xyz/validators
