@@ -63,21 +63,21 @@ Ini akan menghasilkan kunci validator dan menyimpannya di  ./validator_keys dir
 ```
 ls -ltr ./validator_keys
 ```
-### 2.3 Import your keys to your keystore
+### 2.3 Impor keys Anda ke penyimpanan keys Anda
 ```
 ./dill-node accounts import --andes --wallet-dir ./keystore --keys-dir validator_keys/ --accept-terms-of-use
 ```
-### 2.4 Write the password you configured in the previous step into a file:
+### 2.4 Tulis kata sandi yang Anda konfigurasikan pada langkah sebelumnya ke dalam sebuah file:
 ```
-echo nodesync@123 > walletPw.txt
+echo dillnode@123 > walletPw.txt
 ```
-`nodesync@123` is your password, You can change it.
+`dillnode@123` adalah kata sandi Anda, Anda dapat mengubahnya.
 
-### 2.5 Start the light validator node
+### 2.5 Menjalankan node light validator
 ```
 ./start_light.sh -p walletPw.txt
 ```
-`sample output`
+`contoh keluaran`
 
 ```
 ubuntu@xxxxx:~/dill$ ./start_light.sh -p walletPw.txt
@@ -88,7 +88,7 @@ start light node
 start light node done
 ubuntu@xxxxx:~/dill$ nohup: redirecting stderr to stdout
 ```
-### 2.6 Check health node
+### 2.6 Cek kesehatan node
 ```
 ./health_check.sh -v
 ```
@@ -99,9 +99,9 @@ ubuntu@xxxxx:~/dill$ nohup: redirecting stderr to stdout
 
 ### 3.1 Faucet
 
-Get faucet into your EVM wallet from the Andes channel. Your wallet form before on galxe.
+Dapatkan faucet ke dompet EVM Anda dari channel Andes. Dompet yang Anda gunakan sebelumnya di galxe.
 
-Use  WinSCP or Terminus, Then go to folder `/dill/validator_keys` directory and get your `deposit_data-xxxx.json` file and upload it to the site bellow.
+Gunakan MobaXterm atau Termius, Lalu masuk ke folder direktori `/dill/validator_keys` dan dapatkan file `deposit_data-xxxx.json` dan mengunggahnya ke situs di bawah ini.
 
 ### 3.2 Visit https://staking.dill.xyz/
 
