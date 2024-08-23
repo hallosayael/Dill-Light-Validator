@@ -36,14 +36,14 @@ tar -xzvf dill.tar.gz && cd dill
 ```
 ubuntu@ip-xxxx:~/dill$ ./dill_validators_gen new-mnemonic --num_validators=1 --chain=andes --folder=./
 
-***Sangat disarankan untuk menggunakan alat ini pada perangkat offline dan aman untuk menjaga mnemonik Anda tetap aman.***
+***Using the tool on an offline and secure device is highly recommended to keep your mnemonic safe.***
 
-Silakan pilih bahasa Anda ['1. العربية', '2. ελληνικά', '3. English', '4. Français', '5. Bahasa melayu', '6. Italiano', '7. 日本語', '8. 한국어', '9. Português do Brasil', '10. român', '11. Türkçe', '12. 简体中文']:  [English]: 3
-Silakan pilih bahasa daftar kata mnemonik ['1. 简体中文', '2. 繁體中文', '3. čeština', '4. English', '5. Italiano', '6. 한국어', '7. Português', '8. Español']:  [english]: 4
-Buat kata sandi yang mengamankan penyimpanan kunci validator Anda. Anda perlu memasukkannya lagi untuk mendekripsinya saat Anda mengatur validator Dill Anda.:
-Ulangi kata sandi penyimpanan kunci Anda untuk konfirmasi:
-Jumlah token DILL yang akan disetorkan (default 2500). [2500]:
-Ini adalah mnemonik (frasa awal) Anda. Tuliskan dan simpan dengan aman. Ini adalah SATU-SATUNYA cara untuk mengambil kembali deposit Anda.
+Please choose your language ['1. العربية', '2. ελληνικά', '3. English', '4. Français', '5. Bahasa melayu', '6. Italiano', '7. 日本語', '8. 한국어', '9. Português do Brasil', '10. român', '11. Türkçe', '12. 简体中文']:  [English]: 3
+Please choose the language of the mnemonic word list ['1. 简体中文', '2. 繁體中文', '3. čeština', '4. English', '5. Italiano', '6. 한국어', '7. Português', '8. Español']:  [english]: 4
+Create a password that secures your validator keystore(s). You will need to re-enter this to decrypt them when you setup your Dill validators.:
+Repeat your keystore password for confirmation:
+The amount of DILL token to be deposited(2500 by default). [2500]:
+This is your mnemonic (seed phrase). Write it down and store it safely. It is the ONLY way to retrieve your deposit.
 
 
 Creating your keys.
@@ -58,7 +58,7 @@ Your keys can be found at: ./validator_keys
 Press any key.
 ubuntu@ip-xxxx:~/dill$
 ```
-This will generate the validator keys and save them in  ./validator_keys directory 
+Ini akan menghasilkan kunci validator dan menyimpannya di  ./validator_keys directory 
 
 ```
 ls -ltr ./validator_keys
