@@ -141,6 +141,13 @@ ps -ef | grep dill-node | grep -v grep | awk '{print $2}' | xargs kill
 ```
 tail -f -n 100 $HOME/dill/light_node/logs/dill.log
 ```
-### 4.5 Cek di Explorer
+
+### 4.5 Cek syncing
+Pastikan kolom sync_distance:0 dan is_syncing:false
+```
+curl -s localhost:3500/eth/v1/node/syncing
+```
+
+### 4.6 Cek di Explorer
 
 Copy pubkey Anda di deposit_data-xxxx.json dan cari di explorer: https://andes.dill.xyz/validators
